@@ -15,7 +15,7 @@ import { CitiesProvider } from "./contexts/CitiesProvider";
 function App() {
   return (
     <CitiesProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="product" element={<Product />} />
